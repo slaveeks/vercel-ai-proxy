@@ -51,7 +51,7 @@ API‑ключ выдаётся администратором сервиса.
 Пример:
 
 ```bash
-curl -X POST "http://localhost:3000/generate" \
+curl -X POST "http://llm.codex.so/generate" \
   -H "Content-Type: application/json" \
   -H "x-api-key: $API_KEY" \
   -d '{"prompt":"Напиши приветственное сообщение"}'
@@ -82,7 +82,7 @@ curl -X POST "http://localhost:3000/generate" \
 Пример запроса (curl):
 
 ```bash
-curl -N -X POST "http://localhost:3000/stream" \
+curl -N -X POST "http://llm.codex.so/stream" \
   -H "Content-Type: application/json" \
   -H "Accept: application/x-ndjson" \
   -H "x-api-key: $API_KEY" \
